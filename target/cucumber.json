@@ -1,0 +1,111 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "start_timestamp": "2020-08-19T22:35:48.082Z",
+        "line": 3,
+        "name": "Sorting Hats",
+        "description": "",
+        "id": "sorting-hats;sorting-hats",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 572420200,
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "set URI",
+            "match": {
+              "location": "SortingHats.set_URI()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 2115964900,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "the user send get request",
+            "match": {
+              "location": "SortingHats.the_user_send_get_request()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 22717000,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "Verify the statusCode is 200",
+            "match": {
+              "arguments": [
+                {
+                  "val": "200",
+                  "offset": 25
+                }
+              ],
+              "location": "SortingHats.verify_the_statusCode_is(Integer)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 2557300,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "Verify the Content Type is is \"application/json; charset\u003dutf-8\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"application/json; charset\u003dutf-8\"",
+                  "offset": 30
+                }
+              ],
+              "location": "SortingHats.verify_the_Content_Type_is_is(String)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 30826100,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "Rensponse body contains  one of",
+            "match": {
+              "location": "SortingHats.rensponse_body_contains_one_of(String\u003e)"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "\"Gryffindor\"",
+                  "\"Ravenclaw\"",
+                  "Slytherin",
+                  "Hufflepuff"
+                ]
+              }
+            ],
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@wip"
+          }
+        ]
+      }
+    ],
+    "name": "Sorting Hats",
+    "description": "",
+    "id": "sorting-hats",
+    "keyword": "Feature",
+    "uri": "file:src/test/resources/features/sortingHats.feature",
+    "tags": []
+  }
+]
